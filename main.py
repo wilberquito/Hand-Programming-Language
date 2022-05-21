@@ -58,7 +58,7 @@ def memory_handler(tape, tape_pointer, command):
         case '👇':
             tape[tape_pointer] = clamp(tape[tape_pointer] - 1)
         case _:
-            raise Exception('unsupported memory handler command')
+            raise Exception('unsupported command')
         
     return (tape, tape_pointer)
 
